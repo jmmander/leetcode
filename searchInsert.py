@@ -5,7 +5,4 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-
-        nums.append(target)
-        snew = sorted(list(set(nums)))
-        return snew.index(target)
+        return bisect_left(nums, target)
